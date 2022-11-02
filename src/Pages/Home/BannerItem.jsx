@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./css/banner.css";
 const BannerItem = ({ data }) => {
     // console.log(data)
     const { image, id, prev, next } = data;
@@ -8,7 +8,7 @@ const BannerItem = ({ data }) => {
   return (
     <div id={`#slide${id}`} className="carousel-item relative w-full">
       <div className="carosel">
-        <img src={image} className="w-full" alt="banner images not found" />
+        <img src={image} className="w-full rounded-xl" alt="banner images not found" />
       </div>
       <div className="absolute flex justify-start transform -translate-y-1/2 left-6 top-1/4 ">
         <h1 className="text-6xl text-white font-semibold">

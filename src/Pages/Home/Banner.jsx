@@ -6,7 +6,6 @@ import img4 from "../../assets/images/banner/4.jpg";
 import img5 from "../../assets/images/banner/5.jpg";
 import img6 from "../../assets/images/banner/6.jpg";
 import BannerItem from "./BannerItem";
-import "./css/banner.css";
 const bannerData = [
   {
     image: img1,
@@ -47,7 +46,7 @@ const bannerData = [
 ];
 const Banner = () => {
   return (
-    <div className="carousel w-full">
+    <div className="carousel w-full my-16">
       {bannerData.map((data) => (
         <BannerItem key={data.id} data={data}></BannerItem>
       ))}
